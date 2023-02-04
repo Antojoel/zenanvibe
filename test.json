@@ -1,0 +1,88 @@
+{
+  "additional_properties": "xxxxxx",
+  "body": {
+    "create_time": "2023-01-31T12:20:32Z",
+    "id": "3RF129769F6485208",
+    "intent": "CAPTURE",
+    "links": [
+      {
+        "href": "https://api.sandbox.paypal.com/v2/checkout/orders/3RF129769F6485208",
+        "method": "GET",
+        "rel": "self"
+      }
+    ],
+    "payer": {
+      "address": {
+        "country_code": "GB"
+      },
+      "email_address": "*****",
+      "name": {
+        "given_name": "*****",
+        "surname": "*****"
+      },
+      "payer_id": "26KQLXK2CZVHW"
+    },
+    "purchase_units": [
+      {
+        "amount": {
+          "currency_code": "USD",
+          "value": "1.00"
+        },
+        "payee": {
+          "email_address": "sb-47ilym23932246@business.example.com",
+          "merchant_id": "N9D9PEUWFQ4FW"
+        },
+        "payments": {
+          "captures": [
+            {
+              "amount": {
+                "currency_code": "USD",
+                "value": "1.00"
+              },
+              "create_time": "2023-01-31T12:20:46Z",
+              "final_capture": true,
+              "id": "0J386601HC890252U",
+              "seller_protection": {
+                "dispute_categories": [
+                  "ITEM_NOT_RECEIVED",
+                  "UNAUTHORIZED_TRANSACTION"
+                ],
+                "status": "ELIGIBLE"
+              },
+              "status": "COMPLETED",
+              "update_time": "2023-01-31T12:20:46Z"
+            }
+          ]
+        },
+        "reference_id": "default",
+        "shipping": {
+          "address": {
+            "address_line_1": "*****",
+            "address_line_2": "*****",
+            "admin_area_1": "Surrey",
+            "admin_area_2": "Richmond",
+            "country_code": "GB",
+            "postal_code": "TW9 1EH"
+          },
+          "name": {
+            "full_name": "*****"
+          }
+        }
+      }
+    ],
+    "status": "COMPLETED",
+    "update_time": "2023-01-31T12:20:46Z"
+  },
+  "duration_time": "xxxxxx",
+  "header": {
+    "APPLICATION_ID": "APP-80W284485P519543T",
+    "BORDER-IP": "xxxxxx",
+    "CALLER_ACCT_NUM": "N9D9PEUWFQ4FW",
+    "Date": "Tue, 31 Jan 2023 12:20:46 GMT",
+    "Keep-Alive": "xxxxxx",
+    "PROCESSING-IP": "xxxxxx",
+    "SERVER_INFO": "xxxxxx",
+    "paypal-debug-id": "f78422436adf7"
+  },
+  "status": 201
+}
